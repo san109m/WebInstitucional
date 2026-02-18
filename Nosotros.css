@@ -49,13 +49,12 @@ nav {
   padding: 1.5rem 1rem;
 }
 
-
 html {
   scroll-behavior: smooth;
 }
 
 section {
-  scroll-margin-top: 80px; /* altura de tu navbar */
+  scroll-margin-top: 80px;
 }
 
 .nav-container {
@@ -64,10 +63,9 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-   text-decoration: none;
+  text-decoration: none;
 }
 
-/* Logo con hover */
 .logo {
   display: flex;
   align-items: center;
@@ -106,7 +104,7 @@ section {
   transition: color 0.3s ease;
 }
 
-.nav-container > a { text-decoration: none;}
+.nav-container > a { text-decoration: none; }
 .logo p { color: #555; }
 
 .nav-links a::after {
@@ -143,7 +141,6 @@ section {
   background: linear-gradient(90deg, #1c6ea4, #0b3c5d);
 }
 
-/* Botón mobile */
 .menu-btn {
   display: none;
   background: none;
@@ -222,7 +219,6 @@ section {
   line-height: 1.7;
 }
 
-/* Imagen con hover zoom suave */
 .about-image {
   overflow: hidden;
   border-radius: 16px;
@@ -276,7 +272,6 @@ section {
   text-align: center;
 }
 
-/* Card con hover mejorado + línea decorativa */
 .card {
   position: relative;
   display: flex;
@@ -344,9 +339,6 @@ section {
 
 /* ──────────────────────────────────────────
    RAZONCARD
-   Funciona con la estructura HTML ORIGINAL
-   (img directo dentro de .razoncard).
-   No requiere cambios en el HTML.
 ────────────────────────────────────────── */
 
 .razoncard {
@@ -355,8 +347,7 @@ section {
   flex-direction: column;
   align-items: center;
   background-color: #FFFFFF;
-  /* Espacio extra arriba para que el cuadrado azul no se corte */
-  padding: 80px 25px 30px;
+  padding: 100px 20px 24px;
   border-radius: 20px;
   box-shadow: 0 10px 30px rgba(11, 60, 93, 0.12);
   transition: transform 0.35s ease, box-shadow 0.35s ease, background-color 0.35s ease;
@@ -364,7 +355,6 @@ section {
   text-align: center;
 }
 
-/* Cuadrado azul centrado — posición fija relativa al padding-top */
 .razoncard::before {
   content: "";
   position: absolute;
@@ -379,7 +369,6 @@ section {
   transition: border-radius 0.35s ease, transform 0.35s ease;
 }
 
-/* El SVG flota sobre el ::before */
 .razoncard img {
   position: absolute;
   top: 29px;
@@ -392,25 +381,21 @@ section {
   transition: transform 0.35s ease;
 }
 
-/* Hover card */
 .razoncard:hover {
   transform: translateY(-8px);
   box-shadow: 0 20px 45px rgba(11, 60, 93, 0.2);
   background-color: #f0f7ff;
 }
 
-/* Hover: el cuadrado se redondea */
 .razoncard:hover::before {
   border-radius: 50%;
   transform: translateX(-50%) rotate(10deg) scale(1.1);
 }
 
-/* Hover: el ícono escala levemente */
 .razoncard:hover img {
   transform: translateX(-50%) scale(1.15);
 }
 
-/* Línea decorativa al pie */
 .razoncard::after {
   content: "";
   position: absolute;
@@ -470,7 +455,6 @@ section {
   text-align: center;
 }
 
-/* Stat con hover */
 .stat {
   padding: 20px;
   transition: transform 0.3s ease;
@@ -499,7 +483,6 @@ section {
   font-weight: 500;
 }
 
-/* CTA Buttons */
 .btn-cta-primary {
   background: #ffd100;
   color: #1f3c88;
@@ -532,7 +515,6 @@ section {
   background: rgba(255,255,255,0.15);
 }
 
-/* Footer contenido */
 .footer-content {
   max-width: 1200px;
   margin: auto;
@@ -566,7 +548,6 @@ section {
   margin-bottom: 10px;
 }
 
-/* Links del footer con deslizamiento sutil */
 .footer-links a {
   color: #dbe4ff;
   text-decoration: none;
@@ -673,7 +654,6 @@ section {
     align-items: center;
   }
 
-  /* Quita el deslizamiento en mobile (no hay hover real) */
   .footer-links a:hover {
     padding-left: 0;
   }
@@ -737,8 +717,9 @@ section {
     padding: 0 12px;
   }
 
+  /* ✅ CORRECCIÓN: padding-top suficiente para el ícono absoluto (top: 22-29px + 60px alto) */
   .razoncard {
-    padding: 28px 20px 24px;
+    padding: 90px 20px 24px;
   }
 
   .razoncard h3 {
@@ -835,10 +816,15 @@ section {
     padding: 40px 16px 60px;
   }
 
+  /* ✅ En 1 columna también necesita el padding correcto */
   .Razones-card-container {
     grid-template-columns: 1fr;
     gap: 16px;
     padding: 0 8px;
+  }
+
+  .razoncard {
+    padding: 90px 20px 24px;
   }
 
   .footer-stats {
@@ -888,8 +874,6 @@ section {
    ANIMACIONES DE ENTRADA
    ============================================================ */
 
-/* --- Keyframes base --- */
-
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(40px); }
   to   { opacity: 1; transform: translateY(0); }
@@ -920,8 +904,6 @@ section {
   to   { opacity: 1; }
 }
 
-/* --- HERO: título y subtítulo bajan desde arriba --- */
-
 .hero h1 {
   animation: fadeDown 0.7s ease both;
 }
@@ -929,11 +911,6 @@ section {
 .hero p {
   animation: fadeDown 0.7s ease 0.2s both;
 }
-
-/* --- SCROLL REVEAL: clases utilitarias --- */
-
-/* Uso: agregar la clase al elemento en el HTML.
-   El JS de script.js añade .active cuando el elemento entra en pantalla. */
 
 .reveal {
   opacity: 0;
@@ -968,7 +945,6 @@ section {
   transform: translateX(0);
 }
 
-/* Variante con zoom para cards */
 .reveal-scale {
   opacity: 0;
   transform: scale(0.9);
@@ -979,8 +955,6 @@ section {
   opacity: 1;
   transform: scale(1);
 }
-
-/* --- Delays escalonados para grupos de cards --- */
 
 .reveal-delay-1 { transition-delay: 0.1s; }
 .reveal-delay-2 { transition-delay: 0.2s; }

@@ -969,7 +969,20 @@ section {
     max-width: 500px;
   }
 }
+@media (max-width: 768px) {
+  /* Elimina el espacio blanco entre secciones y el footer */
+  .footer {
+    margin-top: 0;
+  }
 
+  #Educativos {
+    padding-bottom: 0;
+  }
+
+  .educativos-container {
+    padding-bottom: 50px;
+  }
+}
 @media (max-width: 600px) {
   #Extracurriculares { padding: 60px 16px 80px; }
   .Extracurriculares-text h2 { font-size: 1.9rem; }
