@@ -151,11 +151,25 @@ nav { padding: 1.5rem 1rem; }
   100% { background-position: 0% 50%; }
 }
 
+/* Animación de aparición del hero */
+@keyframes heroFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
 .hero-content {
   display: flex;
   flex-direction: column;
   text-align: center;
   padding: 0 1.5rem;
+   animation: heroFadeUp 0.9s ease-out both;
 }
 
 .hero h1 {
