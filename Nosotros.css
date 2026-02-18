@@ -55,6 +55,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+   text-decoration: none;
 }
 
 /* Logo con hover */
@@ -95,6 +96,9 @@ nav {
   padding: 6px 0;
   transition: color 0.3s ease;
 }
+
+.nav-container > a { text-decoration: none;}
+.logo p { color: #555; }
 
 .nav-links a::after {
   content: "";
