@@ -25,7 +25,9 @@
 }
 
 html { scroll-behavior: smooth; }
-
+section {
+  scroll-margin-top: 80px; /* altura de tu navbar */
+}
 body {
   background-color: var(--white);
   color: var(--text-dark);
@@ -200,18 +202,6 @@ nav { padding: 1.5rem 1rem; }
   gap: 24px;
 }
 
-
-#DatosContacto a {
-  text-decoration: none;
-  color: inherit;
-  display: block;
-}
-
-.link-informacion{
-  text-decoration: none;
-  color: inherit;
-  display: block;
-}
 .dato-card {
   background: var(--white);
   border-radius: 18px;
@@ -278,6 +268,10 @@ nav { padding: 1.5rem 1rem; }
   color: #1f3c88;
   line-height: 1.4;
 }
+.linkcard{
+text-decoration: none;
+}
+
 
 .dato-sub {
   font-size: 0.82rem !important;
@@ -751,4 +745,18 @@ nav { padding: 1.5rem 1rem; }
 @media (max-width: 360px) {
   .logo p { display: none; }
   .datos-grid { grid-template-columns: 1fr; }
+}
+
+/* link-informacion — fix flex para que ícono y texto queden alineados */
+.link-informacion {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: inherit;
+  transition: opacity 0.2s ease;
+}
+
+.link-informacion:hover {
+  opacity: 0.8;
 }

@@ -51,6 +51,9 @@ a:hover {
   color: #1c6ea4;
 }
 
+section {
+  scroll-margin-top: 80px; /* altura de tu navbar */
+}
 
 /* =============================================================================
    BOTONES — hover moderno

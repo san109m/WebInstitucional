@@ -49,6 +49,15 @@ nav {
   padding: 1.5rem 1rem;
 }
 
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 80px; /* altura de tu navbar */
+}
+
 .nav-container {
   max-width: 1200px;
   margin: 0 auto;

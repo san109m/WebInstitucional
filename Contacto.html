@@ -8,7 +8,6 @@
 </head>
 <body>
 
-<!-- ── NAVBAR ── -->
 <header>
   <nav>
     <div class="nav-container">
@@ -19,10 +18,10 @@
         </div>
       </a>
       <button class="menu-btn" id="menu-btn">☰</button>
-       <ul class="nav-links" id="nav-links">
+      <ul class="nav-links" id="nav-links">
         <li><a href="Inicio.html">Inicio</a></li>
         <li><a href="Nosotros.html">Nosotros</a></li>
-        <li><a href="Programas.html">Programas Academicos</a></li>
+        <li><a href="Programas.html">Programas Académicos</a></li>
         <li><a href="Inscripciones.html">Inscripciones</a></li>
         <li><a href="Contacto.html" class="active">Contacto</a></li>
       </ul>
@@ -30,8 +29,6 @@
   </nav>
 </header>
 
-
-<!-- ── HERO ── -->
 <section class="hero" id="Hero">
   <div class="hero-content">
     <h1>¿Hablamos?</h1>
@@ -44,48 +41,42 @@
   </div>
 </section>
 
-
-<!-- ── DATOS DE CONTACTO ── -->
 <section id="DatosContacto">
   <div class="datos-container">
-
     <div class="datos-grid">
-      <a href="tel+54229144053023">
 
-          <div class="dato-card reveal">
-            <div class="dato-icon-wrap">
-              <img src="images/phone-svgrepo-com.svg" alt="Teléfono">
-            </div>
-            <h3>Teléfono</h3>
-            <p>+54229144053023</p>
-            <p class="dato-sub">Lunes a viernes · 8 a 17 hs</p>
+      <!-- ✅ CORREGIDO: tel: con dos puntos -->
+      <a href="tel:+54229144053023" class="linkcard">
+        <div class="dato-card reveal">
+          <div class="dato-icon-wrap">
+            <img src="images/phone-svgrepo-com.svg" alt="Teléfono">
           </div>
-
+          <h3>Teléfono</h3>
+          <p>+54 229 144-0530</p>
+          <p class="dato-sub">Lunes a viernes · 8 a 17 hs</p>
+        </div>
       </a>
 
-
-      <a href="mailto:santimella11@gmail.com">
-
-          <div class="dato-card reveal">
-            <div class="dato-icon-wrap">
-              <img src="images/mail-svgrepo-com.svg" alt="Email">
-            </div>
-            <h3>Email</h3>
-            <p>info@escuela.edu</p>
-            <p class="dato-sub">Respondemos en 24 hs hábiles</p>
+      <a href="mailto:santimella11@gmail.com" class="linkcard">
+        <div class="dato-card reveal">
+          <div class="dato-icon-wrap">
+            <img src="images/mail-svgrepo-com.svg" alt="Email">
           </div>
+          <h3>Email</h3>
+          <p>  <span>info@escuela.edu</span></p>
+          <p class="dato-sub">Respondemos en 24 hs hábiles</p>
+        </div>
       </a>
 
-      <a href="https://www.google.com/maps/place/Bahía+Blanca,+Provincia+de+Buenos+Aires/@-38.7210667,-62.3387726,28027m/data=!3m2!1e3!4b1!4m6!3m5!1s0x95edbcabdc1302bd:0x76d1d88d241e7a11!8m2!3d-38.7183177!4d-62.2663478!16zL20vMDM2eWhm?entry=ttu&g_ep=EgoyMDI2MDIxNi4wIKXMDSoASAFQAw%3D%3D">
-
-          <div class="dato-card reveal">
-            <div class="dato-icon-wrap">
-              <img src="images/location-svgrepo-com.svg" alt="Dirección">
-            </div>
-            <h3>Dirección</h3>
-            <p>Av. Educación 1234</p>
-            <p class="dato-sub">Buenos Aires, Argentina</p>
+      <a href="https://www.google.com/maps/place/Bahía+Blanca,+Provincia+de+Buenos+Aires/@-38.7210667,-62.3387726,28027m" target="_blank" class="linkcard">
+        <div class="dato-card reveal">
+          <div class="dato-icon-wrap">
+            <img src="images/location-svgrepo-com.svg" alt="Dirección">
           </div>
+          <h3>Dirección</h3>
+          <p>Av. Educación 1234</p>
+          <p class="dato-sub">Bahía Blanca, Argentina</p>
+        </div>
       </a>
 
       <div class="dato-card reveal">
@@ -101,12 +92,9 @@
   </div>
 </section>
 
-
-<!-- ── FORMULARIO + MAPA ── -->
 <section id="ContactoMain">
   <div class="contacto-container">
 
-    <!-- Formulario -->
     <div class="contacto-form-wrap reveal-left">
       <div class="form-header">
         <h2>Envianos un mensaje</h2>
@@ -168,7 +156,6 @@
           </svg>
         </button>
 
-        <!-- Éxito -->
         <div class="form-success" id="formSuccess" style="display:none">
           <div class="check-wrap">
             <svg viewBox="0 0 52 52" xmlns="http://www.w3.org/2000/svg">
@@ -183,7 +170,6 @@
       </form>
     </div>
 
-    <!-- Panel lateral info + mapa -->
     <div class="contacto-info-wrap reveal-right">
 
       <div class="info-panel">
@@ -192,21 +178,22 @@
 
         <div class="info-detalle">
           <div class="info-row">
-            <a href="https://www.google.com/maps/place/Bahía+Blanca,+Provincia+de+Buenos+Aires/@-38.7210667,-62.3387726,28027m/data=!3m2!1e3!4b1!4m6!3m5!1s0x95edbcabdc1302bd:0x76d1d88d241e7a11!8m2!3d-38.7183177!4d-62.2663478!16zL20vMDM2eWhm?entry=ttu&g_ep=EgoyMDI2MDIxNi4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="link-informacion"> 
-                <img src="images/location-svgrepo-com.svg" alt="">
-                <span>Av. Educación 1234, Buenos Aires</span>
+            <a href="https://www.google.com/maps/place/Bahía+Blanca,+Provincia+de+Buenos+Aires/@-38.7210667,-62.3387726,28027m" target="_blank" class="link-informacion">
+              <img src="images/location-svgrepo-com.svg" alt="">
+              <span>Av. Educación 1234, Bahía Blanca</span>
             </a>
           </div>
           <div class="info-row">
-            <a href="tel+54229144053023"  class="link-informacion">
-                <img src="images/phone-svgrepo-com.svg" alt="">
-                <span>+54229144053023</span>
+            <!-- ✅ CORREGIDO: tel: con dos puntos -->
+            <a href="tel:+54229144053023" class="link-informacion">
+              <img src="images/phone-svgrepo-com.svg" alt="">
+              <span>+54 229 144-0530</span>
             </a>
           </div>
           <div class="info-row">
-            <a href="mailto:santimella11@gmail.com"  class="link-informacion">
-                <img src="images/mail-svgrepo-com.svg" alt="">
-                <span>info@escuela.edu</span>
+            <a href="mailto:santimella11@gmail.com" class="link-informacion">
+              <img src="images/mail-svgrepo-com.svg" alt="">
+              <span>info@escuela.edu</span>
             </a>
           </div>
         </div>
@@ -227,17 +214,18 @@
         </div>
       </div>
 
-      <!-- Mapa placeholder -->
       <div class="mapa-wrap">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d122049.9780897183!2d-62.3387725793407!3d-38.72106669806127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95edbcabdc1302bd%3A0x76d1d88d241e7a11!2sBah%C3%ADa%20Blanca%2C%20Provincia%20de%20Buenos%20Aires!5e1!3m2!1ses!2sar!4v1771384796804!5m2!1ses!2sar" width="600" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d122049.9780897183!2d-62.3387725793407!3d-38.72106669806127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95edbcabdc1302bd%3A0x76d1d88d241e7a11!2sBah%C3%ADa%20Blanca%2C%20Provincia%20de%20Buenos%20Aires!5e1!3m2!1ses!2sar!4v1771384796804!5m2!1ses!2sar"
+          width="100%" height="220" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
       </div>
 
     </div>
   </div>
 </section>
 
-
-<!-- ── FOOTER ── -->
 <footer class="footer">
   <div class="footer-content">
     <div class="footer-brand">
@@ -248,17 +236,19 @@
       <h4>Enlaces Rápidos</h4>
       <ul>
         <li><a href="Inicio.html">Inicio</a></li>
-        <li><a href="Nosotros.html">Institucional</a></li>
+        <li><a href="Nosotros.html">Nosotros</a></li>
         <li><a href="Programas.html">Programas Académicos</a></li>
-        <li><a href="Inscripciones.html">Admisiones</a></li>
+        <li><a href="Inscripciones.html">Inscripciones</a></li>
         <li><a href="Contacto.html">Contacto</a></li>
       </ul>
     </div>
+
     <div class="footer-contact">
       <h4>Contacto</h4>
-      <p>📞 (123) 456-7890</p>
-      <p>✉️ info@escuela.edu</p>
+      <a href="tel+542912335355" style="text-decoration: none;"></a><p>📞 (123) 456-7890</p></a>
+     <a href="mailto:santimella11@gmail.com" style="text-decoration: none;"><p>✉️ info@escuela.edu</p></a>
     </div>
+
   </div>
   <div class="footer-bottom">
     © 2026 Santiago Mella — Todos los derechos reservados.
