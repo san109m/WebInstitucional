@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inscripciones — Instituto Educativo</title>
+  <link rel="stylesheet" href="Inscripciones.css">
+</head>
+<body>
+
+<!-- ── NAVBAR ── -->
+<header>
+  <nav>
+    <div class="nav-container">
+      <a href="Inicio.html">
+        <div class="logo">
+          <img src="images/school-svgrepo-com.svg" alt="Logo" id="logonav">
+          <p>Instituto Educativo</p>
+        </div>
+      </a>
+      <button class="menu-btn" id="menu-btn">☰</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="Inicio.html">Inicio</a></li>
+        <li><a href="Nosotros.html">Institucional</a></li>
+        <li><a href="Programas.html">Programas Académicos</a></li>
+        <li><a href="Inscripciones.html" class="active">Inscripciones</a></li>
+        <li><a href="Contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+
+<!-- ── HERO ── -->
+<section class="hero" id="Hero">
+  <div class="hero-content">
+    <h1>Inscripciones 2026</h1>
+    <p>Comenzá el camino hacia una educación de excelencia. Las inscripciones para el ciclo lectivo 2026 están abiertas.</p>
+    <div class="hero-badges">
+      <span class="badge">Inscripciones abiertas</span>
+      <span class="badge">Vacantes limitadas</span>
+    </div>
+  </div>
+</section>
+
+
+<!-- ── PROCESO DE INSCRIPCIÓN ── -->
+<section id="Proceso">
+  <div class="proceso-container">
+
+    <div class="section-header reveal">
+      <h2>¿Cómo inscribirse?</h2>
+      <p>Un proceso simple en 4 pasos para asegurar el lugar de tu hijo.</p>
+    </div>
+
+    <div class="pasos-grid">
+
+      <div class="paso-card reveal">
+        <div class="paso-numero">01</div>
+        <div class="paso-body">
+          <h3>Completá el formulario</h3>
+          <p>Llenás el formulario de preinscripción con los datos del alumno y la familia.</p>
+        </div>
+      </div>
+
+      <div class="paso-card reveal">
+        <div class="paso-numero">02</div>
+        <div class="paso-body">
+          <h3>Entregá la documentación</h3>
+          <p>Presentás la documentación requerida en secretaría en el horario indicado.</p>
+        </div>
+      </div>
+
+      <div class="paso-card reveal">
+        <div class="paso-numero">03</div>
+        <div class="paso-body">
+          <h3>Entrevista familiar</h3>
+          <p>Se coordina una breve reunión con las autoridades del instituto.</p>
+        </div>
+      </div>
+
+      <div class="paso-card reveal">
+        <div class="paso-numero">04</div>
+        <div class="paso-body">
+          <h3>Confirmación de vacante</h3>
+          <p>Recibís la confirmación oficial por email con todos los detalles de inicio.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ── REQUISITOS ── -->
+<section id="Requisitos">
+  <div class="requisitos-container">
+
+    <div class="section-header reveal">
+      <h2>Documentación Requerida</h2>
+      <p>Preparate con anticipación. Estos son los documentos que necesitás presentar.</p>
+    </div>
+
+    <div class="requisitos-grid">
+
+      <div class="requisito-card reveal">
+        <div class="req-icon">
+            <img src="images/paper-svgrepo-com.svg" alt="">
+        </div>
+        <h3>Documento de identidad</h3>
+        <p>DNI del alumno, original y fotocopia de todas las páginas con datos.</p>
+      </div>
+
+      <div class="requisito-card reveal">
+        <div class="req-icon">
+            <img src="images/clipboard-list-svgrepo-com.svg" alt="">
+        </div>
+        <h3>Boletín del año anterior</h3>
+        <p>Calificaciones del último año cursado, firmadas por la institución de origen.</p>
+      </div>
+
+      <div class="requisito-card reveal">
+        <div class="req-icon">
+            <img src="images/vaccine-svgrepo-com.svg" alt="">
+        </div>
+        <h3>Certificado de vacunas</h3>
+        <p>Libreta de vacunación al día según el calendario nacional vigente.</p>
+      </div>
+
+      <div class="requisito-card reveal">
+        <div class="req-icon">
+            <img src="/images/hospital-svgrepo-com.svg" alt="">
+        </div>
+        <h3>Certificado médico</h3>
+        <p>Apto físico emitido por un médico, con fecha no mayor a 6 meses.</p>
+      </div>
+
+      <div class="requisito-card reveal">
+        <div class="req-icon">
+            <img src="images/camera-svgrepo-com.svg" alt="">
+        </div>
+        <h3>Fotos carnet</h3>
+        <p>2 fotografías 4x4 recientes con fondo blanco, en color.</p>
+      </div>
+
+      <div class="requisito-card reveal">
+        <div class="req-icon">
+            <img src="images/home-svgrepo-com.svg" alt="">
+        </div>
+        <h3>Comprobante de domicilio</h3>
+        <p>Servicio a nombre de los padres o tutores con domicilio actualizado.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ── FORMULARIO ── -->
+<section id="Formulario">
+  <div class="formulario-container">
+
+    <div class="formulario-intro reveal">
+      <h2>Formulario de Preinscripción</h2>
+      <p>Completá todos los campos. Nos pondremos en contacto dentro de las 48 horas hábiles.</p>
+    </div>
+
+    <form class="form-inscripcion reveal" id="formInscripcion" action="https://formspree.io/f/xwvnqkqj" method="POST" novalidate>
+
+      <!-- Indicador de pasos -->
+      <div class="form-steps">
+        <div class="form-step active" data-step="1">
+          <span class="step-dot">1</span>
+          <span class="step-label">Alumno</span>
+        </div>
+        <div class="step-line"></div>
+        <div class="form-step" data-step="2">
+          <span class="step-dot">2</span>
+          <span class="step-label">Familia</span>
+        </div>
+        <div class="step-line"></div>
+        <div class="form-step" data-step="3">
+          <span class="step-dot">3</span>
+          <span class="step-label">Nivel</span>
+        </div>
+      </div>
+
+      <!-- PASO 1: Datos del alumno -->
+      <fieldset class="form-panel active" id="panel-1">
+        <legend>Datos del alumno</legend>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="nombre">Nombre *</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre del alumno" required>
+            <span class="form-error">Este campo es obligatorio</span>
+          </div>
+          <div class="form-group">
+            <label for="apellido">Apellido *</label>
+            <input type="text" id="apellido" name="apellido" placeholder="Apellido del alumno" required>
+            <span class="form-error">Este campo es obligatorio</span>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="dni">DNI *</label>
+            <input type="text" id="dni" name="dni" placeholder="Número de DNI" required>
+            <span class="form-error">Ingresá un DNI válido</span>
+          </div>
+          <div class="form-group">
+            <label for="fecha_nac">Fecha de nacimiento *</label>
+            <input type="date" id="fecha_nac" name="fecha_nac" required>
+            <span class="form-error">Este campo es obligatorio</span>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="nacionalidad">Nacionalidad</label>
+            <input type="text" id="nacionalidad" name="nacionalidad" placeholder="Ej: Argentina">
+          </div>
+          <div class="form-group">
+            <label for="obra_social">Obra social / Prepaga</label>
+            <input type="text" id="obra_social" name="obra_social" placeholder="Ej: OSDE, IOMA, ninguna">
+          </div>
+        </div>
+
+        <div class="form-nav">
+          <span></span>
+          <button type="button" class="btn-next" onclick="nextStep(1)">Siguiente →</button>
+        </div>
+      </fieldset>
+
+      <!-- PASO 2: Datos familiares -->
+      <fieldset class="form-panel" id="panel-2">
+        <legend>Datos del familiar responsable</legend>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="familiar_nombre">Nombre completo *</label>
+            <input type="text" id="familiar_nombre" name="familiar_nombre" placeholder="Nombre y apellido" required>
+            <span class="form-error">Este campo es obligatorio</span>
+          </div>
+          <div class="form-group">
+            <label for="vinculo">Vínculo con el alumno *</label>
+            <select id="vinculo" name="vinculo" required>
+              <option value="" disabled selected>Seleccioná una opción</option>
+              <option value="padre">Padre</option>
+              <option value="madre">Madre</option>
+              <option value="tutor">Tutor legal</option>
+              <option value="otro">Otro</option>
+            </select>
+            <span class="form-error">Seleccioná una opción</span>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" required>
+            <span class="form-error">Ingresá un email válido</span>
+          </div>
+          <div class="form-group">
+            <label for="telefono">Teléfono / WhatsApp *</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="Ej: 11 1234-5678" required>
+            <span class="form-error">Este campo es obligatorio</span>
+          </div>
+        </div>
+
+        <div class="form-group full-width">
+          <label for="domicilio">Domicilio *</label>
+          <input type="text" id="domicilio" name="domicilio" placeholder="Calle, número, localidad" required>
+          <span class="form-error">Este campo es obligatorio</span>
+        </div>
+
+        <div class="form-nav">
+          <button type="button" class="btn-prev" onclick="prevStep(2)">← Anterior</button>
+          <button type="button" class="btn-next" onclick="nextStep(2)">Siguiente →</button>
+        </div>
+      </fieldset>
+
+      <!-- PASO 3: Nivel e información adicional -->
+      <fieldset class="form-panel" id="panel-3">
+        <legend>Nivel educativo e información adicional</legend>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="nivel">Nivel al que se inscribe *</label>
+            <select id="nivel" name="nivel" required>
+              <option value="" disabled selected>Seleccioná el nivel</option>
+              <option value="preescolar">Preescolar (3-5 años)</option>
+              <option value="primaria">Primaria (6-11 años)</option>
+              <option value="secundaria">Secundaria (12-17 años)</option>
+            </select>
+            <span class="form-error">Seleccioná una opción</span>
+          </div>
+          <div class="form-group">
+            <label for="grado">Año / Grado</label>
+            <select id="grado" name="grado">
+              <option value="" disabled selected>Seleccioná el año</option>
+              <option value="sala3">Sala de 3</option>
+              <option value="sala4">Sala de 4</option>
+              <option value="sala5">Sala de 5</option>
+              <option value="1primaria">1° Primaria</option>
+              <option value="2primaria">2° Primaria</option>
+              <option value="3primaria">3° Primaria</option>
+              <option value="4primaria">4° Primaria</option>
+              <option value="5primaria">5° Primaria</option>
+              <option value="6primaria">6° Primaria</option>
+              <option value="7primaria">7° Primaria</option>
+              <option value="1secundaria">1° Secundaria</option>
+              <option value="2secundaria">2° Secundaria</option>
+              <option value="3secundaria">3° Secundaria</option>
+              <option value="4secundaria">4° Secundaria</option>
+              <option value="5secundaria">5° Secundaria</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group full-width">
+          <label for="escuela_anterior">Institución de procedencia</label>
+          <input type="text" id="escuela_anterior" name="escuela_anterior" placeholder="Nombre de la escuela anterior (si aplica)">
+        </div>
+
+        <div class="form-group full-width">
+          <label for="necesidades">¿El alumno tiene necesidades educativas especiales?</label>
+          <textarea id="necesidades" name="necesidades" rows="3" placeholder="Describí brevemente si hay algo que debamos tener en cuenta (opcional)"></textarea>
+        </div>
+
+        <div class="form-group full-width">
+          <label for="como_conocio">¿Cómo conociste el instituto?</label>
+          <select id="como_conocio" name="como_conocio">
+            <option value="" disabled selected>Seleccioná una opción</option>
+            <option value="recomendacion">Recomendación familiar / amigos</option>
+            <option value="redes">Redes sociales</option>
+            <option value="google">Google / internet</option>
+            <option value="pasando">Pasando por el barrio</option>
+            <option value="otro">Otro</option>
+          </select>
+        </div>
+
+        <!-- Checkbox de términos -->
+        <div class="form-check">
+          <input type="checkbox" id="terminos" name="terminos" required>
+          <label for="terminos">Acepto el tratamiento de mis datos personales de acuerdo a la política de privacidad del instituto. *</label>
+          <span class="form-error">Debés aceptar los términos</span>
+        </div>
+
+        <div class="form-nav">
+          <button type="button" class="btn-prev" onclick="prevStep(3)">← Anterior</button>
+          <button type="submit" class="btn-submit" id="btnSubmit">
+            <span class="btn-text">Enviar preinscripción</span>
+            <span class="btn-loading" style="display:none">Enviando...</span>
+          </button>
+        </div>
+      </fieldset>
+
+      <!-- Mensaje de éxito -->
+      <div class="form-success" id="formSuccess" style="display:none">
+       <div class="success-icon">
+  <svg viewBox="0 0 52 52" xmlns="http://www.w3.org/2000/svg">
+    <circle class="check-circle" cx="26" cy="26" r="24" fill="none" stroke="#1c6ea4" stroke-width="2.5"/>
+    <path class="check-tick" fill="none" stroke="#1c6ea4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" d="M14 27l8 8 16-16"/>
+  </svg>
+</div>
+        <h3>¡Preinscripción recibida!</h3>
+        <p>Nos pondremos en contacto con vos dentro de las próximas 48 horas hábiles para coordinar los siguientes pasos.</p>
+      </div>
+
+    </form>
+  </div>
+</section>
+
+
+<!-- ── FOOTER ── -->
+<footer class="footer">
+
+  <div class="footer-content">
+    <div class="footer-brand">
+      <h3>Instituto Educativo</h3>
+      <p>Formando líderes del mañana con excelencia académica y valores sólidos. Comprometidos con una educación integral de calidad.</p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Enlaces Rápidos</h4>
+      <ul>
+        <li><a href="Inicio.html">Inicio</a></li>
+        <li><a href="Nosotros.html">Institucional</a></li>
+        <li><a href="Programas.html">Programas Académicos</a></li>
+        <li><a href="Inscripciones.html">Admisiones</a></li>
+        <li><a href="Contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h4>Contacto</h4>
+      <p>📞 (123) 456-7890</p>
+      <p>✉️ info@escuela.edu</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 Santiago Mella — Todos los derechos reservados.
+  </div>
+
+</footer>
+
+<script src="Inscripciones.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

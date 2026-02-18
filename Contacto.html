@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto — Instituto Educativo</title>
+  <link rel="stylesheet" href="Contacto.css">
+</head>
+<body>
+
+<!-- ── NAVBAR ── -->
+<header>
+  <nav>
+    <div class="nav-container">
+      <a href="Inicio.html">
+        <div class="logo">
+          <img src="images/school-svgrepo-com.svg" alt="Logo" id="logonav">
+          <p>Instituto Educativo</p>
+        </div>
+      </a>
+      <button class="menu-btn" id="menu-btn">☰</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="Inicio.html">Inicio</a></li>
+        <li><a href="Nosotros.html">Institucional</a></li>
+        <li><a href="Programas.html">Programas Académicos</a></li>
+        <li><a href="Inscripciones.html">Inscripciones</a></li>
+        <li><a href="Contacto.html" class="active">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+
+<!-- ── HERO ── -->
+<section class="hero" id="Hero">
+  <div class="hero-content">
+    <h1>¿Hablamos?</h1>
+    <p>Estamos para responder todas tus preguntas. Encontranos en persona, por teléfono o completá el formulario.</p>
+  </div>
+  <div class="hero-wave">
+    <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="#ffffff"/>
+    </svg>
+  </div>
+</section>
+
+
+<!-- ── DATOS DE CONTACTO ── -->
+<section id="DatosContacto">
+  <div class="datos-container">
+
+    <div class="datos-grid">
+      <a href="tel+54229144053023">
+
+          <div class="dato-card reveal">
+            <div class="dato-icon-wrap">
+              <img src="images/phone-svgrepo-com.svg" alt="Teléfono">
+            </div>
+            <h3>Teléfono</h3>
+            <p>+54229144053023</p>
+            <p class="dato-sub">Lunes a viernes · 8 a 17 hs</p>
+          </div>
+
+      </a>
+
+
+      <a href="mailto:santimella11@gmail.com">
+
+          <div class="dato-card reveal">
+            <div class="dato-icon-wrap">
+              <img src="images/mail-svgrepo-com.svg" alt="Email">
+            </div>
+            <h3>Email</h3>
+            <p>info@escuela.edu</p>
+            <p class="dato-sub">Respondemos en 24 hs hábiles</p>
+          </div>
+      </a>
+
+      <a href="https://www.google.com/maps/place/Bahía+Blanca,+Provincia+de+Buenos+Aires/@-38.7210667,-62.3387726,28027m/data=!3m2!1e3!4b1!4m6!3m5!1s0x95edbcabdc1302bd:0x76d1d88d241e7a11!8m2!3d-38.7183177!4d-62.2663478!16zL20vMDM2eWhm?entry=ttu&g_ep=EgoyMDI2MDIxNi4wIKXMDSoASAFQAw%3D%3D">
+
+          <div class="dato-card reveal">
+            <div class="dato-icon-wrap">
+              <img src="images/location-svgrepo-com.svg" alt="Dirección">
+            </div>
+            <h3>Dirección</h3>
+            <p>Av. Educación 1234</p>
+            <p class="dato-sub">Buenos Aires, Argentina</p>
+          </div>
+      </a>
+
+      <div class="dato-card reveal">
+        <div class="dato-icon-wrap">
+          <img src="images/clock-svgrepo-com.svg" alt="Horarios">
+        </div>
+        <h3>Horarios</h3>
+        <p>Lun – Vie: 7:30 a 18 hs</p>
+        <p class="dato-sub">Secretaría: 8 a 16 hs</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ── FORMULARIO + MAPA ── -->
+<section id="ContactoMain">
+  <div class="contacto-container">
+
+    <!-- Formulario -->
+    <div class="contacto-form-wrap reveal-left">
+      <div class="form-header">
+        <h2>Envianos un mensaje</h2>
+        <p>Completá el formulario y te respondemos a la brevedad.</p>
+      </div>
+
+      <form class="form-contacto" id="formContacto" action="https://formspree.io/f/xwvnqkqj" method="POST" novalidate>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="nombre">Nombre *</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+            <span class="form-error">Este campo es obligatorio</span>
+          </div>
+          <div class="form-group">
+            <label for="apellido">Apellido *</label>
+            <input type="text" id="apellido" name="apellido" placeholder="Tu apellido" required>
+            <span class="form-error">Este campo es obligatorio</span>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" required>
+            <span class="form-error">Ingresá un email válido</span>
+          </div>
+          <div class="form-group">
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="Opcional">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="asunto">Asunto *</label>
+          <select id="asunto" name="asunto" required>
+            <option value="" disabled selected>Seleccioná un asunto</option>
+            <option value="inscripciones">Inscripciones y vacantes</option>
+            <option value="programas">Programas académicos</option>
+            <option value="aranceles">Aranceles y becas</option>
+            <option value="visita">Solicitar visita al instituto</option>
+            <option value="otro">Otro</option>
+          </select>
+          <span class="form-error">Seleccioná un asunto</span>
+        </div>
+
+        <div class="form-group">
+          <label for="mensaje">Mensaje *</label>
+          <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribí tu consulta acá..." required></textarea>
+          <span class="form-error">Este campo es obligatorio</span>
+        </div>
+
+        <button type="submit" class="btn-enviar" id="btnEnviar">
+          <span class="btn-text">Enviar mensaje</span>
+          <span class="btn-loading" style="display:none">Enviando...</span>
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M22 2L11 13" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M22 2L15 22L11 13L2 9L22 2Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+
+        <!-- Éxito -->
+        <div class="form-success" id="formSuccess" style="display:none">
+          <div class="check-wrap">
+            <svg viewBox="0 0 52 52" xmlns="http://www.w3.org/2000/svg">
+              <circle class="check-circle" cx="26" cy="26" r="24" fill="none" stroke="#1c6ea4" stroke-width="2.5"/>
+              <path class="check-tick" fill="none" stroke="#1c6ea4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" d="M14 27l8 8 16-16"/>
+            </svg>
+          </div>
+          <h3>¡Mensaje enviado!</h3>
+          <p>Te respondemos dentro de las próximas 24 horas hábiles.</p>
+        </div>
+
+      </form>
+    </div>
+
+    <!-- Panel lateral info + mapa -->
+    <div class="contacto-info-wrap reveal-right">
+
+      <div class="info-panel">
+        <h3>Vení a conocernos</h3>
+        <p>Las puertas del instituto están siempre abiertas. Te invitamos a visitarnos y conocer nuestras instalaciones.</p>
+
+        <div class="info-detalle">
+          <div class="info-row">
+            <a href="https://www.google.com/maps/place/Bahía+Blanca,+Provincia+de+Buenos+Aires/@-38.7210667,-62.3387726,28027m/data=!3m2!1e3!4b1!4m6!3m5!1s0x95edbcabdc1302bd:0x76d1d88d241e7a11!8m2!3d-38.7183177!4d-62.2663478!16zL20vMDM2eWhm?entry=ttu&g_ep=EgoyMDI2MDIxNi4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="link-informacion"> 
+                <img src="images/location-svgrepo-com.svg" alt="">
+                <span>Av. Educación 1234, Buenos Aires</span>
+            </a>
+          </div>
+          <div class="info-row">
+            <a href="tel+54229144053023"  class="link-informacion">
+                <img src="images/phone-svgrepo-com.svg" alt="">
+                <span>+54229144053023</span>
+            </a>
+          </div>
+          <div class="info-row">
+            <a href="mailto:santimella11@gmail.com"  class="link-informacion">
+                <img src="images/mail-svgrepo-com.svg" alt="">
+                <span>info@escuela.edu</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="horarios-tabla">
+          <div class="horario-row">
+            <span class="dia">Lunes – Viernes</span>
+            <span class="hora">7:30 – 18:00</span>
+          </div>
+          <div class="horario-row">
+            <span class="dia">Secretaría</span>
+            <span class="hora">8:00 – 16:00</span>
+          </div>
+          <div class="horario-row">
+            <span class="dia">Sábados</span>
+            <span class="hora">Cerrado</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mapa placeholder -->
+      <div class="mapa-wrap">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d122049.9780897183!2d-62.3387725793407!3d-38.72106669806127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95edbcabdc1302bd%3A0x76d1d88d241e7a11!2sBah%C3%ADa%20Blanca%2C%20Provincia%20de%20Buenos%20Aires!5e1!3m2!1ses!2sar!4v1771384796804!5m2!1ses!2sar" width="600" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ── FOOTER ── -->
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-brand">
+      <h3>Instituto Educativo</h3>
+      <p>Formando líderes del mañana con excelencia académica y valores sólidos. Comprometidos con una educación integral de calidad.</p>
+    </div>
+    <div class="footer-links">
+      <h4>Enlaces Rápidos</h4>
+      <ul>
+        <li><a href="Inicio.html">Inicio</a></li>
+        <li><a href="Nosotros.html">Institucional</a></li>
+        <li><a href="Programas.html">Programas Académicos</a></li>
+        <li><a href="Inscripciones.html">Admisiones</a></li>
+        <li><a href="Contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+    <div class="footer-contact">
+      <h4>Contacto</h4>
+      <p>📞 (123) 456-7890</p>
+      <p>✉️ info@escuela.edu</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    © 2026 Santiago Mella — Todos los derechos reservados.
+  </div>
+</footer>
+
+<script src="Contacto.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
